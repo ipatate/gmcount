@@ -1,0 +1,34 @@
+{
+  "name": "goodmotion/gmcount",
+  "description": "Plugin for increment number of reader for page entry.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "minimum-stability": "dev",
+  "keywords": ["craft", "cms", "craftcms", "craft-plugin", "gmcount"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Faramaz Pat",
+      "homepage": "https://www.goodmotion.fr"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0-RC1"
+  },
+  "autoload": {
+    "psr-4": {
+      "goodmotion\\gmcount\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "GMCount",
+    "handle": "gmcount",
+    "schemaVersion": "1.0.0",
+    "hasCpSettings": false,
+    "hasCpSection": false,
+    "components": {
+      "gmcount": "goodmotion\\gmcount\\services\\GMCountService"
+    },
+    "class": "goodmotion\\gmcount\\GMCount"
+  }
+}
