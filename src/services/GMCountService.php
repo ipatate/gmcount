@@ -74,6 +74,9 @@ class GMCountService extends Component
         // find line for this entry
         $count = $this->findByEntryId($entryId);
 
+        if ($count === null) {
+            return 0;
+        }
         // return total
         return $count->total;
     }
